@@ -15,6 +15,11 @@ $dataRoutes = [
         'path' => './controller/LoginController.php',
         'controller' => 'LoginController',
         'action' => 'render'
+    ],
+    '/registration' => [
+        'path' => './controller/RegistrationController.php',
+        'controller' => 'RegistrationController',
+        'action' => 'render'
     ]
 ];
 

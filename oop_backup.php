@@ -1,8 +1,11 @@
 <?php
 
+$name = 'vaso';
+$age = 25;
+
 interface UserInterface{
     public function getName();
-    public function setName();
+    public function setName($nameValue);
     public function getPassword();
     public function setPassword();
     public function saveData();
@@ -79,13 +82,13 @@ class UserGuest implements GuestInterface{
         
     }
     
-    public function delete() {
+    public function pay() {
         
     }
 }
 
-$User1 = new User($name, $age);
-
+$User1 = new UserAdmin($name, $age);
+$User1->setName("gora");
 $User1->saveData();
 
 //echo '<pre>';

@@ -16,7 +16,7 @@ class Route {
     }
 
     public function executeController() {
-        // get array route from poutes.php by path | example /gallery
+        // get array route from routes.php by path | example /gallery
         $dataController = $this->routes[$this->path];
         
         // get full path file controller | example ./controller/GalleryController.php

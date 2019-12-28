@@ -9,7 +9,13 @@ class Route {
         include './routes.php';
         
         // path  from user url example /gallery
-        $this->path = $_SERVER['REQUEST_URI'];
+        $pathInfo = $_SERVER['PATH_INFO'];
+        
+        if(!$pathInfo) {
+            $pathInfo = '/';
+        }
+        
+        $this->path = $pathInfo;
         
         // array routes from routes.php
         $this->routes = $dataRoutes;

@@ -17,9 +17,9 @@ class BlogModel{
         return $this->posts;
     }
     
-    public function getPost($id){
+    public function getPost($idBlog){
         foreach ($this->posts as $post) {
-            if($post['id'] === (+$id)){
+            if($post['id'] === (+$idBlog)){
                 return $post;
             }
         }

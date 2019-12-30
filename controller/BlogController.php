@@ -19,7 +19,9 @@ class BlogController implements Controller{
         include './view/posts.php';
     }
     
-    public function getPost(){
+    public function getPost($idBlog){
+        $post = $this->model->getPost($idBlog);
+        var_dump($post);
         include './view/post.php';
     }
     
